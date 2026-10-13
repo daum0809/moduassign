@@ -58,7 +58,11 @@
 
 ## 실행 방법
 
+아래 명령은 모두 이 폴더(`local-rag-chatbot/`) 안에서 실행합니다.
+
 ```bash
+cd local-rag-chatbot
+
 # 1) Ollama 설치 후 모델 받기
 ollama pull qwen3:8b
 ollama pull bge-m3
