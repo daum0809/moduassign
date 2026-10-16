@@ -24,7 +24,7 @@ MODEL = "claude-sonnet-5-5"
 MAX_ATTEMPTS = 3
 EDIT_TOOLS = {"Edit", "Write", "MultiEdit", "NotebookEdit"}
 # 셸로 파일을 쓰는 명령도 편집으로 센다 (리다이렉트, sed -i, tee, PowerShell 쓰기 cmdlet)
-SHELL_WRITE = re.compile(r"(?<![0-9&])>>?\s*(?!&|/dev/null|\$null)[\w./\'\"-]|sed\s+-i|tee|Set-Content|Out-File|Add-Content")
+SHELL_WRITE = re.compile(r"(?<![0-9&])>>?\s*(?!&|/dev/null|\$null)[\w./'\"-]|\bsed\s+-i|\btee\b|Set-Content|Out-File|Add-Content")
 
 TASKS = {
     "parse-log": {
