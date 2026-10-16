@@ -1,0 +1,15 @@
+2026-10-01 09:00:01 INFO [web] server started on :8080
+2026-10-01 09:00:05 INFO [db] pool ready (size=5)
+2026-10-01 09:01:12 WARNING [db] slow query took 1.8s
+2026-10-01 09:02:30 ERROR [db] connection refused: 10.0.0.5:5432
+2026-10-01 09:02:31 INFO [db] retry 1 after ERROR, backing off
+2026-10-01 09:03:44 ERROR [auth] token expired for user_id=42
+Traceback (most recent call last):
+  File "auth.py", line 88, in verify
+    raise TokenExpired()
+TokenExpired
+2026-10-01 09:04:00 INFO [web] GET /health 200
+2026-10-01 09:05:10 error [cache] lowercase level is not a real level
+2026-10-01 09:06:22 CRITICAL [web] worker crashed
+2026-10-01 09:07:03 ERROR [payment] amount | currency mismatch
+2026-10-01 09:08:15 DEBUG [web] ERROR-handler registered
